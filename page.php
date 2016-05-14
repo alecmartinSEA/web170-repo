@@ -7,7 +7,7 @@
 	<h2><a href='<?php the_permalink(); //the permalink ?>'><?php the_title(); //the title?> </a></h2>
 	<?php the_content('');  //add content?>
 <?php endwhile; endif; //end loop ?>
-<p>index.php</p>
+<p>page.php</p>
 <?php get_sidebar(); //Getting the sidebar ?>
 
 <?php get_footer(); //get footer ?>
