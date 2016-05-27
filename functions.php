@@ -10,4 +10,12 @@ Description: This is my web 170 theme version 1.0
 register_nav_menus(array(
 'main-menu' => __('Main'),	
 ));
+
+
+
+//Theme support for thumbnails 
+add_theme_support('post-thumbnails' );
+
+//page excerpts
+add_post_type_support('page', 'excerpt');
 ?>
