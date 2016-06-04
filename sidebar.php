@@ -12,4 +12,17 @@
 	  <h2 class="side nav title">Blog</h2>
 	  <ul class="sub-nav-ul"><?php wp_list_categories(array('title_li' => __(''))); //list categories ?></ul>
 	  <?php endif; ?> 
+	  <!--Start the quote -->
+	  <?php if (get_post_meta($post ->ID, 'Quote', true)) : //do we have a quote
+	  ?>
+	  <blockquote><?php echo get_post_meta($post->ID, 'Quote', true); //The actual quote ?></blockquote>
+
+	<?php endif; ?>
+	<!-- end quote here -->
+
+	<!-- Make sidebar show up -->
+	<?php dynamic_sidebar(1); //call the widgets yo ?>
+	<!-- End the Sidebar -->
+
+	  <p>Sidebar.php</p>
 	</aside>

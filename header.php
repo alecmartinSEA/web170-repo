@@ -6,12 +6,18 @@
 		<meta name="viewport" content="width=device-width" />
 		<!--Responsive nav css-->
 		<link href="<?php bloginfo('template_directory');?>/navstyles.css" rel="stylesheet" />
-		<link rel="stylesheet" href="<?php bloginfo('template_directory');?>/flexslider.css" type="text/css">
+		<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/flexslider.css" type="text/css">
 		<!--respoinsive nav js-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-		<script src="jquery.flexslider.js"></script>
-		<script src="js/script.js"></script>
-		<meta charset="UTF-8" />
+		<script src="<?php bloginfo('template_directory'); ?> /jquery.flexslider.js"></script>
+		
+		<script type="text/javascript" charset="utf-8">
+  $(window).load(function() {
+    $('.flexslider').flexslider();
+  });
+</script>
+
+	<meta charset="UTF-8" />
 		<?php wp_head();?>
 
 	</head>
